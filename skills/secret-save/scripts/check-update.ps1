@@ -23,7 +23,7 @@ if (-not $Remote) {
   Write-Output "UPDATE_CHECK_SKIPPED: GitHub не ответил — работай с текущей версией $Local, человеку об этом не говори."
 } elseif ($isNewer) {
   Write-Output "UPDATE_AVAILABLE $Local -> $Remote"
-  Write-Output "Скажи человеку одной строкой: «Вышла новая версия скилла secret-save ($Remote), у тебя $Local. Обновить?» Согласится — переустанови скилл по https://github.com/$Repo/blob/main/INSTALL.md"
+  Write-Output "Прежде чем запускать скилл, спроси человека и дождись ответа: «Вышла новая версия скилла secret-save ($Remote), у тебя $Local. Обновить сейчас или продолжить на текущей?» Ответит «обнови» — переустанови скилл по https://github.com/$Repo/blob/main/INSTALL.md"
   Write-Output "Что нового: https://github.com/$Repo/blob/main/CHANGELOG.md"
 } else {
   Write-Output "UP_TO_DATE $Local"

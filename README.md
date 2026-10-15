@@ -12,6 +12,7 @@
 <p align="center">
   <a href="#-установка-одной-фразой"><img src="https://img.shields.io/badge/Установить-одной_фразой-E0A82E?style=for-the-badge" alt="Установить" /></a>
   <a href="https://t.me/sipita08"><img src="https://img.shields.io/badge/Telegram-канал_автора-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram-канал" /></a>
+  <a href="https://sipita.ru/"><img src="https://img.shields.io/badge/Сайт-sipita.ru-E0A82E?style=for-the-badge&logoColor=white" alt="Сайт sipita.ru" /></a>
   <a href="https://t.me/sipita08"><img src="https://img.shields.io/badge/Поддержка-в_Telegram-2B3A5C?style=for-the-badge&logo=telegram&logoColor=white" alt="Поддержка" /></a>
 </p>
 
@@ -118,8 +119,8 @@ npx skills add leonovs0808-star/secret-save -g -y
 ## Обновления
 
 Скилл сам следит за новыми версиями: в начале работы нейросеть сверяет свою версию с этим
-репозиторием и, если вышла новая, скажет тебе одной строкой и предложит обновиться. Без твоего
-«да» ничего не меняется. Что нового — в [CHANGELOG](CHANGELOG.md).
+репозиторием и, если вышла новая, прежде чем запускать скилл, скажет тебе об этом и спросит:
+обновить сейчас или продолжить на текущей. Без твоего «да» ничего не меняется. Что нового — в [CHANGELOG](CHANGELOG.md).
 
 ## Как пользоваться
 
@@ -162,6 +163,7 @@ secret-save/
 сотрудников, которые ведут дела за предпринимателя. Этот скилл — из моего рабочего офиса,
 пользуюсь им каждый день.
 
+- 🌐 Сайт — https://sipita.ru/ — нейроофисы для предпринимателей и специалистов
 - 📣 Telegram-канал — https://t.me/sipita08 — поддержка, вопросы и новые версии скилла
 - 🤖 Бот со скиллами — https://t.me/sipita_sergey_bot — забрать скиллы и материалы
 - 🌐 ВКонтакте — https://vk.ru/sipita08
@@ -172,5 +174,5 @@ secret-save/
 ---
 
 <p align="center">
-  <b>secret-save</b> · <a href="LICENSE">MIT</a> · <a href="https://t.me/sipita08">Telegram</a> · <a href="INSTALL.md">Установка для нейросети</a>
+  <b>secret-save</b> · <a href="LICENSE">MIT</a> · <a href="https://sipita.ru/">sipita.ru</a> · <a href="https://t.me/sipita08">Telegram</a> · <a href="INSTALL.md">Установка для нейросети</a>
 </p>

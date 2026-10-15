@@ -22,7 +22,7 @@ if [ -z "$REMOTE" ]; then
   echo "UPDATE_CHECK_SKIPPED: GitHub не ответил — работай с текущей версией $LOCAL, человеку об этом не говори."
 elif [ "$REMOTE" != "$LOCAL" ] && [ "$(printf '%s\n%s\n' "$REMOTE" "$LOCAL" | sort -t. -k1,1n -k2,2n -k3,3n | tail -n 1)" = "$REMOTE" ]; then
   echo "UPDATE_AVAILABLE $LOCAL -> $REMOTE"
-  echo "Скажи человеку одной строкой: «Вышла новая версия скилла secret-save ($REMOTE), у тебя $LOCAL. Обновить?» Согласится — переустанови скилл по https://github.com/$REPO/blob/main/INSTALL.md"
+  echo "Прежде чем запускать скилл, спроси человека и дождись ответа: «Вышла новая версия скилла secret-save ($REMOTE), у тебя $LOCAL. Обновить сейчас или продолжить на текущей?» Ответит «обнови» — переустанови скилл по https://github.com/$REPO/blob/main/INSTALL.md"
   echo "Что нового: https://github.com/$REPO/blob/main/CHANGELOG.md"
 else
   echo "UP_TO_DATE $LOCAL"
