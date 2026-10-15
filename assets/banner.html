@@ -1,0 +1,40 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1280px;height:640px;background:#232B42;color:#F1ECDD;font-family:'IBM Plex Sans',sans-serif;overflow:hidden;position:relative}
+body:before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 85% 20%,rgba(224,168,46,.13),transparent 60%)}
+.wrap{position:relative;display:flex;height:100%;padding:64px 64px;gap:48px;align-items:center}
+.left{flex:0 0 500px}
+.tag{display:inline-block;font:600 18px 'IBM Plex Mono','DejaVu Sans Mono',monospace;color:#20211C;background:#E0A82E;padding:6px 14px;border-radius:8px;letter-spacing:.5px}
+h1{font-weight:700;font-size:46px;line-height:1.08;margin:26px 0 22px}
+h1 em{font-style:normal;color:#E0A82E}
+p{font-size:23px;line-height:1.4;color:#BDC4D8}
+.works{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
+.works span{font-size:16px;padding:6px 12px;border:1px solid #4A5C8A;border-radius:999px;color:#F1ECDD}
+.right{flex:1;min-width:0;display:flex;flex-direction:column;gap:22px}
+.win{background:#161C2E;border:1px solid #3A4568;border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.35);overflow:hidden}
+.bar{height:34px;display:flex;align-items:center;gap:8px;padding:0 14px;background:#1D2439;font-size:14px;color:#A3ABC6}
+.bar i{width:12px;height:12px;border-radius:50%;background:#4A5C8A;display:inline-block}
+.bar b{font-weight:500;margin-left:10px}
+.code{font:16px/1.65 'IBM Plex Mono','DejaVu Sans Mono',monospace;padding:16px 20px;white-space:pre}
+.dim{color:#7F88A6}.ok{color:#9FD39B}.gold{color:#E0A82E}.cur{display:inline-block;width:10px;height:19px;background:#E0A82E;vertical-align:-3px}
+.env .code div{padding:0 6px;border-radius:6px}
+.env .new{background:rgba(224,168,46,.16);color:#F1ECDD}
+.chk{font-family:"IBM Plex Sans","DejaVu Sans",sans-serif;font-weight:700}
+.dots{color:#E0A82E;letter-spacing:2px}
+</style></head><body><div class="wrap">
+<div class="left">
+<span class="tag">secret-save</span>
+<h1>Ключи сохраняются.<br><em>Нейросеть их не&nbsp;видит.</em></h1>
+<p>Одна готовая команда: вставил в терминал, ввёл ключ — он лёг в&nbsp;.env. Не в чат, не в историю, не в контекст.</p>
+<div class="works"><span>Claude</span><span>ChatGPT · Codex</span><span>Cursor</span><span>Gemini</span><span>Windows</span><span>macOS</span><span>Linux</span></div>
+</div>
+<div class="right">
+<div class="win"><div class="bar"><i></i><i></i><i></i><b>Терминал</b></div>
+<div class="code"><span class="dim">~ %</span> ( D='/Users/anna/my-bot'; K='TELEGRAM_BOT_TOKEN' …
+Вставь значение TELEGRAM_BOT_TOKEN и нажми Enter
+(символы не видны): <span class="cur"></span>
+<span class="ok"><span class="chk">✓</span> TELEGRAM_BOT_TOKEN сохранён в my-bot/.env</span></div></div>
+<div class="win env"><div class="bar"><i></i><i></i><i></i><b>.env</b></div>
+<div class="code"><div>OPENAI_API_KEY=<span class="dots">••••••••••••</span></div><div>VK_ACCESS_TOKEN=<span class="dots">••••••••••</span></div><div class="new">TELEGRAM_BOT_TOKEN=<span class="dots">••••••••••••••</span>  <span class="gold">← новый</span></div></div></div>
+</div>
+</div></body></html>
