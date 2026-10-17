@@ -18,7 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Собрать архив
-        run: cd skills && zip -r ../secret-save.zip secret-save && { echo "Версия: $(tr -d ' \r\n' < secret-save/VERSION)"; echo; cat secret-save/SKILL.md; } > ../secret-save.md
+        run: |
+          cd skills
+          zip -r ../secret-save.zip secret-save
+          { echo "Версия: $(tr -d ' \r\n' < secret-save/VERSION)"; echo; cat secret-save/SKILL.md; } > ../secret-save.md
       - name: Выложить в выпуск latest
         env:
           GH_TOKEN: ${{ github.token }}
