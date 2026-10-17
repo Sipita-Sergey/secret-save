@@ -81,7 +81,7 @@ API — и сервис выдаёт ключ. Дальше два плохих 
 есть доступ к твоему компьютеру):
 
 ```text
-Установи скилл secret-save из https://github.com/leonovs0808-star/secret-save — инструкция для тебя в файле INSTALL.md. Поставь глобально, чтобы работал во всех проектах, и скажи, когда готово.
+Установи скилл secret-save из https://github.com/Sipita-Sergey/secret-save — инструкция для тебя в файле INSTALL.md. Поставь глобально, чтобы работал во всех проектах, и скажи, когда готово.
 ```
 
 Нейросеть сама скачает скилл и положит его туда, где она ищет скиллы.
@@ -92,7 +92,7 @@ API — и сервис выдаёт ключ. Дальше два плохих 
 Одной командой для всех нейросетей на компьютере (нужен Node.js):
 
 ```bash
-npx skills add leonovs0808-star/secret-save -g -y
+npx skills add Sipita-Sergey/secret-save -g -y
 ```
 
 Или скопируй папку `skills/secret-save` сюда:
@@ -108,7 +108,7 @@ npx skills add leonovs0808-star/secret-save -g -y
 На Windows `~` — это `C:\Users\<имя>`.
 
 **Claude или ChatGPT в браузере, в приложении, на телефоне:** скачай архив
-https://github.com/leonovs0808-star/secret-save/releases/download/latest/secret-save.zip и загрузи
+https://github.com/Sipita-Sergey/secret-save/releases/download/latest/secret-save.zip и загрузи
 его в «Навыки» (в Claude: «Настроить» → «Навыки» → «+»; в ChatGPT: «Плагины» → «Навыки» → «+»). Раздела
 «Навыки» нет — положи тот же архив в файлы проекта. Проще всего — отправь нейронке ссылку на
 [INSTALL.md](INSTALL.md), она проведёт сама.
@@ -166,7 +166,7 @@ secret-save/
 - 📣 Telegram-канал — https://t.me/sipita08 — поддержка, вопросы и новые версии скилла
 - 🤖 Бот со скиллами — https://t.me/sipita_sergey_bot — забрать скиллы и материалы
 - 🌐 ВКонтакте — https://vk.ru/sipita08
-- 🐞 Нашли ошибку или есть идея — [Issues](https://github.com/leonovs0808-star/secret-save/issues)
+- 🐞 Нашли ошибку или есть идея — [Issues](https://github.com/Sipita-Sergey/secret-save/issues)
 
 Если скилл пригодился — поставь ⭐, так его найдут другие.
 

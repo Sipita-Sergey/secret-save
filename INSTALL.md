@@ -11,10 +11,10 @@ chatgpt.com, приложение без доступа к файлам, тел�
 ## 1. Скачай репозиторий во временную папку
 
 ```bash
-git clone --depth 1 https://github.com/leonovs0808-star/secret-save.git
+git clone --depth 1 https://github.com/Sipita-Sergey/secret-save.git
 ```
 
-Нет `git` — скачай архив https://github.com/leonovs0808-star/secret-save/archive/refs/heads/main.zip
+Нет `git` — скачай архив https://github.com/Sipita-Sergey/secret-save/archive/refs/heads/main.zip
 и распакуй. Нужна папка `skills/secret-save/` целиком (в ней `SKILL.md`).
 
 ## 2. Положи папку туда, где тебя ищут скиллы
@@ -34,7 +34,7 @@ git clone --depth 1 https://github.com/leonovs0808-star/secret-save.git
 Есть Node.js — можно одной командой, установщик сам найдёт агентов на компьютере:
 
 ```bash
-npx skills add leonovs0808-star/secret-save -g -y
+npx skills add Sipita-Sergey/secret-save -g -y
 ```
 
 Проверь, что по выбранному пути лежит `secret-save/SKILL.md`, временную папку удали.
@@ -46,7 +46,7 @@ npx skills add leonovs0808-star/secret-save -g -y
 клику браузер скачает сам. **Ответ без архива и без ссылки — провал установки.** В первом же ответе
 дай ссылку и шаги — не спрашивай сначала, какой у человека тариф или меню.
 
-Архив (не распаковывать): https://github.com/leonovs0808-star/secret-save/releases/download/latest/secret-save.zip
+Архив (не распаковывать): https://github.com/Sipita-Sergey/secret-save/releases/download/latest/secret-save.zip
 
 - **Claude (claude.ai, приложение Claude):** «Настройки» → «Возможности» → включить «Выполнение кода
   и создание файлов» (Code execution and file creation). Затем «Настроить» → «Навыки» → «+» →

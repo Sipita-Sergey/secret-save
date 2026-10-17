@@ -3,7 +3,7 @@
 #   powershell -NoProfile -ExecutionPolicy Bypass -File check-update.ps1
 # Только сообщает о новой версии — сам ничего не скачивает и не меняет.
 
-$Repo = 'leonovs0808-star/secret-save'
+$Repo = 'Sipita-Sergey/secret-save'
 $Url = "https://raw.githubusercontent.com/$Repo/main/skills/secret-save/VERSION"
 $Local = ([IO.File]::ReadAllText((Join-Path (Split-Path -Parent $PSScriptRoot) 'VERSION'))).Trim()
 

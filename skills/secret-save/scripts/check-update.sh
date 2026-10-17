@@ -4,7 +4,7 @@
 #   sh check-update.sh
 # Только сообщает о новой версии — сам ничего не скачивает и не меняет.
 
-REPO="leonovs0808-star/secret-save"
+REPO="Sipita-Sergey/secret-save"
 URL="https://raw.githubusercontent.com/$REPO/main/skills/secret-save/VERSION"
 DIR=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 LOCAL=$(tr -d ' \r\n' < "$DIR/VERSION" 2>/dev/null)
