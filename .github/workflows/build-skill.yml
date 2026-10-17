@@ -1,6 +1,7 @@
 # Собирает архив скилла при каждой правке в main и кладёт его в выпуск «latest».
 # Ссылка на скачивание постоянная: .../releases/download/latest/secret-save.zip —
-# её даёт INSTALL.md. Руками поддерживается только репозиторий.
+# её даёт INSTALL.md. Рядом — secret-save.md: тот же скилл одним файлом (это и есть SKILL.md) для
+# любой нейронки без «Навыков» — файл принимает любая. Руками поддерживается только репозиторий.
 name: build-skill
 
 on:
@@ -17,10 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Собрать архив
-        run: cd skills && zip -r ../secret-save.zip secret-save
+        run: cd skills && zip -r ../secret-save.zip secret-save && cp secret-save/SKILL.md ../secret-save.md
       - name: Выложить в выпуск latest
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release view latest >/dev/null 2>&1 || gh release create latest --title "Скилл одним архивом" --notes "Собирается автоматически из main при каждой правке. Установка — INSTALL.md."
-          gh release upload latest secret-save.zip --clobber
+          gh release upload latest secret-save.zip secret-save.md --clobber
