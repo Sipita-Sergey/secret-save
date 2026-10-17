@@ -165,7 +165,10 @@ secret-save/
 - 🌐 Сайт — https://sipita.ru/ — нейроофисы для предпринимателей и специалистов
 - 📣 Telegram-канал — https://t.me/sipita08 — поддержка, вопросы и новые версии скилла
 - 🤖 Бот со скиллами — https://t.me/sipita_sergey_bot — забрать скиллы и материалы
-- 🌐 ВКонтакте — https://vk.ru/sipita08
+- ВКонтакте — https://vk.ru/sipita08
+- MAX — https://max.ru/join/ckqMy6PLqC7lMcFUblNhWghGbWQEWMobrDAj0thJUFk
+- TenChat — https://tenchat.ru/SipitaSergey
+- YouTube — https://www.youtube.com/@SipitaSergey
 - 🐞 Нашли ошибку или есть идея — [Issues](https://github.com/Sipita-Sergey/secret-save/issues)
 
 Если скилл пригодился — поставь ⭐, так его найдут другие.
