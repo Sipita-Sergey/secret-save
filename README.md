@@ -107,12 +107,11 @@ npx skills add leonovs0808-star/secret-save -g -y
 
 На Windows `~` — это `C:\Users\<имя>`.
 
-**Claude в браузере или в приложении:** скачай `secret-save.zip` из
-[Releases](https://github.com/leonovs0808-star/secret-save/releases/latest) и загрузи в
-«Настройки → Возможности → Навыки».
-
-**ChatGPT и другие чаты без доступа к компьютеру:** вставь содержимое
-[`SKILL.md`](skills/secret-save/SKILL.md) в инструкции проекта — правила сработают и так.
+**Claude или ChatGPT в браузере, в приложении, на телефоне:** скачай архив
+https://github.com/leonovs0808-star/secret-save/releases/download/latest/secret-save.zip и загрузи
+его в «Навыки» (в Claude: «Настроить» → «Навыки» → «+»; в ChatGPT: «Плагины» → «Навыки» → «+»). Раздела
+«Навыки» нет — положи тот же архив в файлы проекта. Проще всего — отправь нейронке ссылку на
+[INSTALL.md](INSTALL.md), она проведёт сама.
 
 </details>
 

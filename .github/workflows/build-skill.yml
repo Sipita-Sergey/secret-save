@@ -1,0 +1,26 @@
+# Собирает архив скилла при каждой правке в main и кладёт его в выпуск «latest».
+# Ссылка на скачивание постоянная: .../releases/download/latest/secret-save.zip —
+# её даёт INSTALL.md. Руками поддерживается только репозиторий.
+name: build-skill
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Собрать архив
+        run: cd skills && zip -r ../secret-save.zip secret-save
+      - name: Выложить в выпуск latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view latest >/dev/null 2>&1 || gh release create latest --title "Скилл одним архивом" --notes "Собирается автоматически из main при каждой правке. Установка — INSTALL.md."
+          gh release upload latest secret-save.zip --clobber
